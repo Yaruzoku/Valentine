@@ -1,0 +1,34 @@
+<html>
+<body>
+    <div class="center">
+  <h1>Will you be my valentine?</h1>
+  <p><em>pretty please</em></p> <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZmZoajFoNHcwdGkxYzYyeHB4YXB1NGdiOTFhdGlmb2czbnd0YWU1dyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/rrkv2iIT4xRdhZJGkd/giphy.gif" width="50">
+
+  <button onclick="alert('YIPPEEEEE')">yes</button>
+  <button id="runaway">no</button>
+    </div>
+  <script>
+    const button = document.getElementById("runaway");
+
+    button.onmouseover = () => {
+      button.style.position = "absolute";
+      button.style.left = Math.random() * 300 + "px";
+      button.style.top = Math.random() * 300 + "px";
+    };
+  </script>
+  <style>
+  body {
+    margin: 0;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* left ↔ right */
+    justify-content: center;  /* top ↕ bottom */
+    height: 100vh;            /* full screen height */
+    text-align: center;
+  }
+</style>
+</body>
+</html>
